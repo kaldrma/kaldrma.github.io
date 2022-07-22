@@ -64,6 +64,7 @@ span:hover{
 a {
     color: rgb(43, 43, 43);
     transition: all 0.2s;
+    text-decoration: none;
 }
 
 a:hover {
@@ -98,10 +99,12 @@ a:hover {
   }
   
   .background {
+    height: 100%;
     transform: translateZ(-10px) scale(2);
   }
   
   .foreground {
+    height: 100%;
     transform: translateZ(-5px) scale(1.5);
   }
   
@@ -161,4 +164,24 @@ footer {
     transform: translateY(100px);
     opacity: 0;
     transition: 0.2s;
+}
+
+/*shop wrapper*/
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+.card {
+    flex: 0 0 auto;
+    max-width: 250px;
+    padding: 0.5rem ;
+    border: 2px white solid;
+    border-radius: 10px;
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    text-align: left;
 }
