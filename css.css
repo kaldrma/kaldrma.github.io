@@ -124,12 +124,23 @@ a:hover {
 
 
 main{
-    padding:2rem 1rem ;
     background-color: black;
 }
 
-section, article{
-    margin-bottom: 4rem;
+.wb {
+    background-image: url("./pictures/wb.png");
+    background-position: top;
+    background-repeat: repeat;
+    color: black;
+}
+
+section{
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+article{
+
+    padding: 3rem 0px;
 }
 .center{
     margin: 10px auto;
@@ -139,17 +150,24 @@ section, article{
 #socials >*{
     padding: 1rem;
 }
+#socials {
+    padding: 5px;
+}
 
 input{
-    border: white 2px solid;
+    border: black 2px solid;
     background-color: black;
     border-radius: 5px;
     color: white;
 }
 
 footer {
-    background-color: rgb(212, 212, 212);
+    background-image: url("./pictures/footer.png");
     color:rgb(43, 43, 43) ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
 }
 
 
@@ -171,8 +189,8 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    border-top: 2px white solid;
-    border-bottom: 2px white solid;
+    margin-bottom: 0px;
+    
 }
 .card {
     flex: 0 0 auto;
@@ -181,7 +199,7 @@ footer {
     border: 2px white solid;
     border-radius: 10px;
     margin: 0.5rem;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: left;
 }
