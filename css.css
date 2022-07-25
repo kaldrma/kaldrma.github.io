@@ -169,6 +169,9 @@ footer {
     background-size: cover;
     padding-top: 150px;
 }
+.partneri >* {
+    padding: 3rem;
+}
 
 
 /* animacije*/
