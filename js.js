@@ -1,4 +1,5 @@
 console.log("connected")
+
 //nav nestaje na vrhu
 
 let wrapper = document.getElementsByClassName("wrapper")
@@ -6,7 +7,7 @@ let glava = document.getElementById("glava")
 let navigacija = document.getElementById("navigacija") 
 
 function prozirnaGlava (){
-    if (wrapper[0].scrollTop < 10){
+    if (wrapper[0].scrollTop < 1000){
         glava.style.opacity = 0
     }
     else{

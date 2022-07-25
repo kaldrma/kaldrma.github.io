@@ -200,6 +200,8 @@ footer {
     border-radius: 10px;
     margin: 0.5rem;
     background-color: black;
+}
+.card a {
     color: white;
     text-align: left;
 }
