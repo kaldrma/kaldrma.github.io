@@ -88,3 +88,5 @@ function salji () {
 
     xhr.send(data);
 }
+
+console.log("v2")
