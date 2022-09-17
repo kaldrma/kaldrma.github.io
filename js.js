@@ -61,7 +61,7 @@ function readJson () {
     .then(json => {
         this.users = json;
         console.log(this.users);
-        prijavljenih = this.users[-1].id;
+        prijavljenih = this.users.length;
         clanova.innerText = "Ima nas " + prijavljenih + "!!!"
     })
     .catch(function () {
