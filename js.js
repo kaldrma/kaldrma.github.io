@@ -46,6 +46,9 @@ elementi.forEach(element => {
 
 //fetch zavrzlame
 
+let prijavljenih = 0;
+let clanova = document.getElementById("clanova");
+
 function readJson () {
     // http://localhost:8080
     fetch('https://kaldrma.github.io/base.json')
@@ -58,7 +61,8 @@ function readJson () {
     .then(json => {
         this.users = json;
         console.log(this.users);
-        console.log("oke")
+        prijavljenih = this.users[-1].id;
+        clanova.innerText = "Ima nas " + prijavljenih + "!!!"
     })
     .catch(function () {
         this.dataError = true;
