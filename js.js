@@ -48,6 +48,7 @@ elementi.forEach(element => {
 
 let prijavljenih = 0;
 let clanova = document.getElementById("clanova");
+let arhiva ;
 
 function readJson () {
     // http://localhost:8080
@@ -63,6 +64,8 @@ function readJson () {
         console.log(this.users);
         prijavljenih = this.users.length;
         clanova.innerText = "Ima nas " + prijavljenih + "!!!"
+
+        arhiva = json;
     })
     .catch(function () {
         this.dataError = true;
@@ -70,3 +73,18 @@ function readJson () {
  }
 
 readJson()
+
+
+function salji () {
+    let data = ' , {"id": "'+ (prijavljenih+1) +'","ime": "'+ document.getElementById("ime").value+'","prezime": "'+ document.getElementById("prezime").value+'","rodjendan": "'+ document.getElementById("rodjendan").value+'","email": "'+ document.getElementById("mail").value+'"}'
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://kaldrma.github.io/base.json");
+
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onload = () => console.log(xhr.responseText);
+
+    xhr.send(data);
+}
