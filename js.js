@@ -58,6 +58,7 @@ function readJson () {
     .then(json => {
         this.users = json;
         console.log(this.users);
+        console.log("oke")
     })
     .catch(function () {
         this.dataError = true;
